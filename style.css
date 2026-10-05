@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #f7f9fa;
+    min-height: 100vh;
+    display: flex;
+    font-family: Roboto, Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.upload-card {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding: 16px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.preview-box {
+    background-color: #b5b5b5;
+    width: 200px;
+    height: 130px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sync-symbol {
+    font-size: 50px;
+    color: #555555;
+    border: 4px solid #555555;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    user-select: none;
+}
+
+
+.preview-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.info-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #3b5998;
+    height: 32px;
+    font-size: 13px;
+    color: #333333;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.progress-bar-fill {
+    background-color: #c7d5ea;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    font-weight: 500;
+    border-right: 1px solid #b2c4dc;
+}
+
+.progress-remaining {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12px;
+
+}
+
+.video-title {
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.status-note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #333333;
+}
+
+
+.btn-done {
+    background-color: #3b5998;
+    color: #ffffff;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    height: 32px;
+    padding: 0 32px;
+    cursor: pointer;
+}
+
+.btn-done:hover {
+    background-color: #2d4373;
+}
+
+
+@media (max-width: 600px) {
+    .upload-card {
+        flex-direction: column;
+        max-width: 420px;
+        gap: 16px;
+    }
+
+    .preview-box {
+        width: 100%;
+        height: 180px;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .progress-container {
+        width: 100%;
+    }
+
+    .video-title {
+        margin-top: 14px;
+    }
+
+    .status-note {
+        margin-top: 14px;
+    }
+
+    .action-box {
+        width: 100%;
+    }
+
+    .btn-done {
+        width: 100%;
+    }
+}
